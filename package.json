@@ -1,5 +1,6 @@
 {
-  "name": "gpt-mock",
+  "name": "@publica/gpt-mock",
+  "version": "1.0.0",
   "description": "Test library for mocking out Google Publisher Tags",
   "homepage": "https://github.com/krux/gpt-mock/",
   "bugs": "https://github.com/krux/gpt-mock/issues",
