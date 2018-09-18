@@ -1,6 +1,6 @@
 {
   "name": "@publica/gpt-mock",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Test library for mocking out Google Publisher Tags",
   "homepage": "https://github.com/krux/gpt-mock/",
   "bugs": "https://github.com/krux/gpt-mock/issues",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git://github.com/krux/gpt-mock.git"
   },
-  "main": "dist/gpt-mock.js",
+  "main": "dist/@publica/gpt-mock.js",
   "author": {
     "name": "Seth Yates",
     "web": "http://github.com/sethyates"

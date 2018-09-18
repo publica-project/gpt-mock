@@ -47,6 +47,10 @@ export default class GPT {
    * @param {number} version The version to emulate.
    */
   constructor(version = 94) {
+    this._version = version;
+  }
+
+  _init() {
     /**
      * Flag indicating that {@link GPT} API is loaded and ready to be called.
      * This property will be simply undefined until the API is ready.
@@ -72,8 +76,7 @@ export default class GPT {
      *
      * @type {!Array<function()>|!CommandArray}
      */
-    this.cmd = [];
-    this._version = version;
+    this.cmd = this.cmd || [];
     this._slots = [];
     this._slotCounter = 0;
     this._services = {};
@@ -89,7 +92,7 @@ export default class GPT {
    * @returns {string} Version string.
    */
   getVersion() {
-    return `${this._version}`;
+    return `${this._version || 94}`;
   }
 
   /**
