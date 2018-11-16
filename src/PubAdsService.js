@@ -31,7 +31,8 @@ export default class PubAdsService extends Service {
       videoContentId: null,
       videoCmsId: null,
       safeFrameConfig: null,
-      tagForChildDirectedTreatment: null
+      tagForChildDirectedTreatment: null,
+      nonPersonalizedAds: 1,
     };
     this._correlator = Math.random();
   }
@@ -464,5 +465,15 @@ export default class PubAdsService extends Service {
       fn();
       return true;
     }
+  }
+
+  /**
+  * Configures whether the page should request personalized or non-personalized ads. Personalized ads served by default.
+  *
+  * @param {number} nonPersonalizedAds 0 for personalized ads, 1 for non-personalized ads.
+  */
+  setRequestNonPersonalizedAds(nonPersonalizedAds) {
+    this.nonPersonalizedAds = nonPersonalizedAds;
+    return this;
   }
 }
