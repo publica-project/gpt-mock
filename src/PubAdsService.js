@@ -473,7 +473,7 @@ export default class PubAdsService extends Service {
   * @param {number} nonPersonalizedAds 0 for personalized ads, 1 for non-personalized ads.
   */
   setRequestNonPersonalizedAds(nonPersonalizedAds) {
-    this.nonPersonalizedAds = nonPersonalizedAds;
+    this._options.nonPersonalizedAds = nonPersonalizedAds;
     return this;
   }
 }
