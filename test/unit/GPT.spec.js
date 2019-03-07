@@ -103,7 +103,7 @@ describe('GPT', () => {
       const slot = gpt.defineOutOfPageSlot(adUnitPath, optDiv);
       expect(slot).to.be.ok();
       expect(slot.getAdUnitPath()).to.be(adUnitPath);
-      expect(slot._outOfPage).to.be(true);
+      expect(slot._options.outOfPage).to.be(true);
     });
 
     it('adds a slot to the list of slots', () => {

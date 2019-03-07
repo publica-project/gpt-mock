@@ -1,104 +1,104 @@
 window.esdocSearchIndex = [
   [
-    "gpt-mock/dist/commandarray.js~commandarray",
+    "@publica/gpt-mock/dist/commandarray.js~commandarray",
     "class/src/CommandArray.js~CommandArray.html",
-    "<span>CommandArray</span> <span class=\"search-result-import-path\">gpt-mock/dist/CommandArray.js</span>",
+    "<span>CommandArray</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/CommandArray.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/companionadsservice.js~companionadsservice",
+    "@publica/gpt-mock/dist/companionadsservice.js~companionadsservice",
     "class/src/CompanionAdsService.js~CompanionAdsService.html",
-    "<span>CompanionAdsService</span> <span class=\"search-result-import-path\">gpt-mock/dist/CompanionAdsService.js</span>",
+    "<span>CompanionAdsService</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/CompanionAdsService.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/contentservice.js~contentservice",
+    "@publica/gpt-mock/dist/contentservice.js~contentservice",
     "class/src/ContentService.js~ContentService.html",
-    "<span>ContentService</span> <span class=\"search-result-import-path\">gpt-mock/dist/ContentService.js</span>",
+    "<span>ContentService</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/ContentService.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/gpt.js~gpt",
+    "@publica/gpt-mock/dist/gpt.js~gpt",
     "class/src/GPT.js~GPT.html",
-    "<span>GPT</span> <span class=\"search-result-import-path\">gpt-mock/dist/GPT.js</span>",
+    "<span>GPT</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/GPT.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/events/impressionviewableevent.js~impressionviewableevent",
+    "@publica/gpt-mock/dist/events/impressionviewableevent.js~impressionviewableevent",
     "class/src/events/ImpressionViewableEvent.js~ImpressionViewableEvent.html",
-    "<span>ImpressionViewableEvent</span> <span class=\"search-result-import-path\">gpt-mock/dist/events/ImpressionViewableEvent.js</span>",
+    "<span>ImpressionViewableEvent</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/events/ImpressionViewableEvent.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/pubadsservice.js~pubadsservice",
+    "@publica/gpt-mock/dist/pubadsservice.js~pubadsservice",
     "class/src/PubAdsService.js~PubAdsService.html",
-    "<span>PubAdsService</span> <span class=\"search-result-import-path\">gpt-mock/dist/PubAdsService.js</span>",
+    "<span>PubAdsService</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/PubAdsService.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/responseinformation.js~responseinformation",
+    "@publica/gpt-mock/dist/responseinformation.js~responseinformation",
     "class/src/ResponseInformation.js~ResponseInformation.html",
-    "<span>ResponseInformation</span> <span class=\"search-result-import-path\">gpt-mock/dist/ResponseInformation.js</span>",
+    "<span>ResponseInformation</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/ResponseInformation.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/safeframeconfig.js~safeframeconfig",
+    "@publica/gpt-mock/dist/safeframeconfig.js~safeframeconfig",
     "class/src/SafeFrameConfig.js~SafeFrameConfig.html",
-    "<span>SafeFrameConfig</span> <span class=\"search-result-import-path\">gpt-mock/dist/SafeFrameConfig.js</span>",
+    "<span>SafeFrameConfig</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/SafeFrameConfig.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/service.js~service",
+    "@publica/gpt-mock/dist/service.js~service",
     "class/src/Service.js~Service.html",
-    "<span>Service</span> <span class=\"search-result-import-path\">gpt-mock/dist/Service.js</span>",
+    "<span>Service</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/Service.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/size.js~size",
+    "@publica/gpt-mock/dist/size.js~size",
     "class/src/Size.js~Size.html",
-    "<span>Size</span> <span class=\"search-result-import-path\">gpt-mock/dist/Size.js</span>",
+    "<span>Size</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/Size.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/sizemappingbuilder.js~sizemappingbuilder",
+    "@publica/gpt-mock/dist/sizemappingbuilder.js~sizemappingbuilder",
     "class/src/SizeMappingBuilder.js~SizeMappingBuilder.html",
-    "<span>SizeMappingBuilder</span> <span class=\"search-result-import-path\">gpt-mock/dist/SizeMappingBuilder.js</span>",
+    "<span>SizeMappingBuilder</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/SizeMappingBuilder.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/slot.js~slot",
+    "@publica/gpt-mock/dist/slot.js~slot",
     "class/src/Slot.js~Slot.html",
-    "<span>Slot</span> <span class=\"search-result-import-path\">gpt-mock/dist/Slot.js</span>",
+    "<span>Slot</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/Slot.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/slotid.js~slotid",
+    "@publica/gpt-mock/dist/slotid.js~slotid",
     "class/src/SlotId.js~SlotId.html",
-    "<span>SlotId</span> <span class=\"search-result-import-path\">gpt-mock/dist/SlotId.js</span>",
+    "<span>SlotId</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/SlotId.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/events/slotonloadevent.js~slotonloadevent",
+    "@publica/gpt-mock/dist/events/slotonloadevent.js~slotonloadevent",
     "class/src/events/SlotOnloadEvent.js~SlotOnloadEvent.html",
-    "<span>SlotOnloadEvent</span> <span class=\"search-result-import-path\">gpt-mock/dist/events/SlotOnloadEvent.js</span>",
+    "<span>SlotOnloadEvent</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/events/SlotOnloadEvent.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/events/slotrenderendedevent.js~slotrenderendedevent",
+    "@publica/gpt-mock/dist/events/slotrenderendedevent.js~slotrenderendedevent",
     "class/src/events/SlotRenderEndedEvent.js~SlotRenderEndedEvent.html",
-    "<span>SlotRenderEndedEvent</span> <span class=\"search-result-import-path\">gpt-mock/dist/events/SlotRenderEndedEvent.js</span>",
+    "<span>SlotRenderEndedEvent</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/events/SlotRenderEndedEvent.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/events/slotvisibilitychangedevent.js~slotvisibilitychangedevent",
+    "@publica/gpt-mock/dist/events/slotvisibilitychangedevent.js~slotvisibilitychangedevent",
     "class/src/events/SlotVisibilityChangedEvent.js~SlotVisibilityChangedEvent.html",
-    "<span>SlotVisibilityChangedEvent</span> <span class=\"search-result-import-path\">gpt-mock/dist/events/SlotVisibilityChangedEvent.js</span>",
+    "<span>SlotVisibilityChangedEvent</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/events/SlotVisibilityChangedEvent.js</span>",
     "class"
   ],
   [
-    "gpt-mock/dist/targetingmap.js~targetingmap",
+    "@publica/gpt-mock/dist/targetingmap.js~targetingmap",
     "class/src/TargetingMap.js~TargetingMap.html",
-    "<span>TargetingMap</span> <span class=\"search-result-import-path\">gpt-mock/dist/TargetingMap.js</span>",
+    "<span>TargetingMap</span> <span class=\"search-result-import-path\">@publica/gpt-mock/dist/TargetingMap.js</span>",
     "class"
   ],
   [
@@ -3939,6 +3939,12 @@ window.esdocSearchIndex = [
     "src/pubadsservice.js~pubadsservice#setpublisherprovidedid",
     "class/src/PubAdsService.js~PubAdsService.html#instance-method-setPublisherProvidedId",
     "src/PubAdsService.js~PubAdsService#setPublisherProvidedId",
+    "method"
+  ],
+  [
+    "src/pubadsservice.js~pubadsservice#setrequestnonpersonalizedads",
+    "class/src/PubAdsService.js~PubAdsService.html#instance-method-setRequestNonPersonalizedAds",
+    "src/PubAdsService.js~PubAdsService#setRequestNonPersonalizedAds",
     "method"
   ],
   [

@@ -88,6 +88,9 @@ export default class ContentService extends Service {
    * @override
    */
   enable() {
+    if (this._enabled) {
+      return;
+    }
     super.enable();
     for (let [slot, content] of this._storedContent) {
       slot._setContent(content);

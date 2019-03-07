@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 171,
-  "actualCount": 171,
+  "expectCount": 172,
+  "actualCount": 172,
   "files": {
     "src/CommandArray.js": {
       "expectCount": 3,
@@ -29,8 +29,8 @@
       "undocumentLines": []
     },
     "src/PubAdsService.js": {
-      "expectCount": 29,
-      "actualCount": 29,
+      "expectCount": 30,
+      "actualCount": 30,
       "undocumentLines": []
     },
     "src/ResponseInformation.js": {

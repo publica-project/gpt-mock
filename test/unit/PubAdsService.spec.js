@@ -152,8 +152,8 @@ describe('PubAdsService', () => {
       const slot = service.defineOutOfPagePassback(adUnitPath);
       expect(slot).to.be.ok();
       expect(slot.getAdUnitPath()).to.be(adUnitPath);
-      expect(slot._passback).to.be(true);
-      expect(slot._outOfPage).to.be(true);
+      expect(slot._options.passback).to.be(true);
+      expect(slot._options.outOfPage).to.be(true);
     });
   });
 
@@ -178,7 +178,7 @@ describe('PubAdsService', () => {
       expect(slot.getSizes()).to.have.length(1);
       expect(slot.getSizes()[0].getWidth()).to.be(size[0]);
       expect(slot.getSizes()[0].getHeight()).to.be(size[1]);
-      expect(slot._passback).to.be(true);
+      expect(slot._options.passback).to.be(true);
     });
   });
 

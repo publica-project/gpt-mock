@@ -89,7 +89,8 @@ export default class PubAdsService extends Service {
       videoContentId: null,
       videoCmsId: null,
       safeFrameConfig: null,
-      tagForChildDirectedTreatment: null
+      tagForChildDirectedTreatment: null,
+      nonPersonalizedAds: 1,
     };
     this._correlator = Math.random();
   }
@@ -184,8 +185,8 @@ export default class PubAdsService extends Service {
   defineOutOfPagePassback(adUnitPath) {
     if (adUnitPath != null) {
       const slot = new Slot(adUnitPath).addService(this);
-      slot._passback = true;
-      slot._outOfPage = true;
+      slot._options.passback = true;
+      slot._options.outOfPage = true;
       return slot;
     } else {
       return null;
@@ -206,7 +207,7 @@ export default class PubAdsService extends Service {
   definePassback(adUnitPath, size) {
     if (adUnitPath != null &amp;&amp; size != null) {
       const slot = new Slot(adUnitPath, size).addService(this);
-      slot._passback = true;
+      slot._options.passback = true;
       return slot;
     } else {
       return null;
@@ -522,6 +523,16 @@ export default class PubAdsService extends Service {
       fn();
       return true;
     }
+  }
+
+  /**
+  * Configures whether the page should request personalized or non-personalized ads. Personalized ads served by default.
+  *
+  * @param {number} nonPersonalizedAds 0 for personalized ads, 1 for non-personalized ads.
+  */
+  setRequestNonPersonalizedAds(nonPersonalizedAds) {
+    this._options.nonPersonalizedAds = nonPersonalizedAds;
+    return this;
   }
 }
 </code></pre>

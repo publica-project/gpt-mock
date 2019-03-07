@@ -9,7 +9,6 @@ docs/**
 CLA.md
 CONTRIBUTING.md
 gulpfile.babel.js
-src/**
 test/**
 webpack.config.babel.js
 *.iml

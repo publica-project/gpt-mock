@@ -127,8 +127,8 @@ export default class PubAdsService extends Service {
   defineOutOfPagePassback(adUnitPath) {
     if (adUnitPath != null) {
       const slot = new Slot(adUnitPath).addService(this);
-      slot._passback = true;
-      slot._outOfPage = true;
+      slot._options.passback = true;
+      slot._options.outOfPage = true;
       return slot;
     } else {
       return null;
@@ -149,7 +149,7 @@ export default class PubAdsService extends Service {
   definePassback(adUnitPath, size) {
     if (adUnitPath != null && size != null) {
       const slot = new Slot(adUnitPath, size).addService(this);
-      slot._passback = true;
+      slot._options.passback = true;
       return slot;
     } else {
       return null;
