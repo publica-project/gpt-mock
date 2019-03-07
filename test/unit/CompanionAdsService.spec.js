@@ -4,6 +4,7 @@ import GPT from '../../src/GPT';
 /** @test {CompanionAdsService} */
 describe('CompanionAdsService', () => {
   const gpt = new GPT();
+  gpt._init();
 
   /** @test {CompanionAdsService#constructor} */
   describe('#constructor', () => {

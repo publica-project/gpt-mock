@@ -11,6 +11,7 @@ describe('GPT', () => {
   describe('#constructor', () => {
     it('constructs', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt).to.be.ok();
     });
   });
@@ -19,6 +20,7 @@ describe('GPT', () => {
   describe('#getVersion', () => {
     it('returns current version', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.getVersion()).to.be('94');
     });
   });
@@ -27,6 +29,7 @@ describe('GPT', () => {
   describe('#companionAds', () => {
     it('returns the service', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.companionAds()).to.be.ok();
       expect(gpt.companionAds().getName()).to.be('companion_ads');
     });
@@ -36,6 +39,7 @@ describe('GPT', () => {
   describe('#content', () => {
     it('returns the service', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.content()).to.be.ok();
       expect(gpt.content().getName()).to.be('content');
     });
@@ -45,6 +49,7 @@ describe('GPT', () => {
   describe('#pubads', () => {
     it('returns the service', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.pubads()).to.be.ok();
       expect(gpt.pubads().getName()).to.be('publisher_ads');
     });
@@ -54,11 +59,13 @@ describe('GPT', () => {
   describe('#enableServices', () => {
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.enableServices()).to.be(undefined);
     });
 
     it('enables the services', () => {
       const gpt = new GPT();
+      gpt._init();
       gpt.enableServices();
       expect(gpt.pubads()._enabled).to.be(true);
     });
@@ -68,6 +75,7 @@ describe('GPT', () => {
   describe('#sizeMapping', () => {
     it('returns a new builder', () => {
       const gpt = new GPT();
+      gpt._init();
       const builder1 = gpt.sizeMapping();
       expect(builder1).to.be.ok();
       const builder2 = gpt.sizeMapping();
@@ -80,6 +88,7 @@ describe('GPT', () => {
   describe('#defineSlot', () => {
     it('returns a slot', () => {
       const gpt = new GPT();
+      gpt._init();
       const slot = gpt.defineSlot(adUnitPath, size, optDiv);
       expect(slot).to.be.ok();
       expect(slot.getAdUnitPath()).to.be(adUnitPath);
@@ -87,6 +96,7 @@ describe('GPT', () => {
 
     it('adds a slot to the list of slots', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
       const slot = gpt.defineSlot(adUnitPath, size, optDiv);
@@ -100,14 +110,16 @@ describe('GPT', () => {
   describe('#defineOutOfPageSlot', () => {
     it('returns a new slot', () => {
       const gpt = new GPT();
+      gpt._init();
       const slot = gpt.defineOutOfPageSlot(adUnitPath, optDiv);
       expect(slot).to.be.ok();
       expect(slot.getAdUnitPath()).to.be(adUnitPath);
-      expect(slot._outOfPage).to.be(true);
+      expect(slot._options.outOfPage).to.be(true);
     });
 
     it('adds a slot to the list of slots', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
       const slot = gpt.defineOutOfPageSlot(adUnitPath, optDiv);
@@ -121,6 +133,7 @@ describe('GPT', () => {
   describe('#destroySlots', () => {
     it('returns true if no slots', () => {
       const gpt = new GPT();
+      gpt._init();
 
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
@@ -129,6 +142,7 @@ describe('GPT', () => {
 
     it('returns true if clearing all slots', () => {
       const gpt = new GPT();
+      gpt._init();
 
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
@@ -144,6 +158,7 @@ describe('GPT', () => {
 
     it('returns true if clearing specific slot', () => {
       const gpt = new GPT();
+      gpt._init();
 
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
@@ -161,6 +176,7 @@ describe('GPT', () => {
 
     it('returns false if slot does not exist', () => {
       const gpt = new GPT();
+      gpt._init();
 
       expect(gpt._slots).to.be.an('array');
       expect(gpt._slots).to.be.empty();
@@ -179,11 +195,13 @@ describe('GPT', () => {
   describe('#display', () => {
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.display('div')).to.be(undefined);
     });
 
     it('displays the slot', () => {
       const gpt = new GPT();
+      gpt._init();
       const slot = gpt.defineSlot(adUnitPath, [], optDiv).addService(gpt.pubads());
       gpt.display(optDiv);
       expect(slot._options.displayed).to.be(true);
@@ -194,6 +212,7 @@ describe('GPT', () => {
   describe('#openConsole', () => {
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.openConsole()).to.be(undefined);
     });
   });
@@ -202,6 +221,7 @@ describe('GPT', () => {
   describe('#disablePublisherConsole', () => {
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.disablePublisherConsole()).to.be(undefined);
     });
   });
@@ -211,11 +231,13 @@ describe('GPT', () => {
     const title = 'Advertisement';
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.setAdIframeTitle(title)).to.be(undefined);
     });
 
     it('saves the title', () => {
       const gpt = new GPT();
+      gpt._init();
       gpt.setAdIframeTitle(title);
       expect(gpt._title).to.be(title);
     });
@@ -225,11 +247,13 @@ describe('GPT', () => {
   describe('#_loaded', () => {
     it('returns undefined', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt._loaded()).to.be(undefined);
     });
 
     it('sets apiReady flag', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.apiReady).to.be(undefined);
       expect(gpt._loaded()).to.be(undefined);
       expect(gpt.apiReady).to.be(true);
@@ -237,6 +261,7 @@ describe('GPT', () => {
 
     it('replaces cmd with CommandArray', () => {
       const gpt = new GPT();
+      gpt._init();
       expect(gpt.cmd).to.be.an('array');
       expect(gpt._loaded()).to.be(undefined);
       expect(gpt.cmd).to.be.an('object');

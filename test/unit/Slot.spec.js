@@ -15,6 +15,7 @@ describe('Slot', () => {
   const optDivNull = null;
   const size = [728, 90];
   const gt = new GPT();
+  gt._init();
   const clickUrl = 'http://www.google.com/';
   const advertiserId = 'adv';
   const campaignId = 'camp';

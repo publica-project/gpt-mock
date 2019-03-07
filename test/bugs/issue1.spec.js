@@ -13,6 +13,7 @@ describe('bugs', () => {
     // the expected behaviour
     it('should set apiReady when loaded', () => {
       const gpt = new GPT();
+      gpt._init();
 
       // Replace this code with steps to reproduce the problem
       expect(gpt.apiReady).to.be(undefined);

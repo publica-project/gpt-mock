@@ -5,6 +5,7 @@ import Slot from '../../src/Slot';
 /** @test {Service} */
 describe('Service', () => {
   const gpt = new GPT();
+  gpt._init();
   const name = 'something';
   const adUnitPath = '/Test/123';
   const size = [728, 90];

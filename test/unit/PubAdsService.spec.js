@@ -6,6 +6,7 @@ import Slot from '../../src/Slot';
 /** @test {PubAdsService} */
 describe('PubAdsService', () => {
   const gt = new GPT();
+  gt._init();
   const adUnitPath = '/Test/12345';
   const size = [728, 90];
 
@@ -26,6 +27,7 @@ describe('PubAdsService', () => {
 
     it('sets the pubadsReady flag', () => {
       const gt = new GPT();
+      gt._init();
       const service = new PubAdsService(gt);
       expect(gt.pubadsReady).to.be(undefined);
       service.enable();
@@ -152,8 +154,8 @@ describe('PubAdsService', () => {
       const slot = service.defineOutOfPagePassback(adUnitPath);
       expect(slot).to.be.ok();
       expect(slot.getAdUnitPath()).to.be(adUnitPath);
-      expect(slot._passback).to.be(true);
-      expect(slot._outOfPage).to.be(true);
+      expect(slot._options.passback).to.be(true);
+      expect(slot._options.outOfPage).to.be(true);
     });
   });
 
@@ -178,7 +180,7 @@ describe('PubAdsService', () => {
       expect(slot.getSizes()).to.have.length(1);
       expect(slot.getSizes()[0].getWidth()).to.be(size[0]);
       expect(slot.getSizes()[0].getHeight()).to.be(size[1]);
-      expect(slot._passback).to.be(true);
+      expect(slot._options.passback).to.be(true);
     });
   });
 
@@ -599,4 +601,20 @@ describe('PubAdsService', () => {
     });
   });
 
+
+  /** @test {PubAdsService#setRequestNonPersonalizedAds} */
+  describe('#setRequestNonPersonalizedAds', () => {
+    it('sets the non personalized ads', () => {
+      const service = new PubAdsService(gt);
+      expect(service.setRequestNonPersonalizedAds(1)).to.be(service);
+    });
+
+    it('sets the nonPersonalizedAds flag', () => {
+      const service = new PubAdsService(gt);
+      service.setRequestNonPersonalizedAds();
+      expect(service._options.nonPersonalizedAds).to.be(1);
+      service.setRequestNonPersonalizedAds(0);
+      expect(service._options.nonPersonalizedAds).to.be(0);
+    });
+  });
 });

@@ -169,7 +169,7 @@ export default class GPT {
   defineOutOfPageSlot(adUnitPath, optDiv) {
     this._slotCounter += 1;
     const slot = new Slot(adUnitPath, [], optDiv, this._slotCounter);
-    slot._outOfPage = true;
+    slot._options.outOfPage = true;
     return this._addSlot(slot);
   }
 

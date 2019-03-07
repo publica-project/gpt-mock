@@ -5,6 +5,8 @@ import Slot from '../../src/Slot';
 /** @test {ContentService} */
 describe('ContentService', () => {
   const gpt = new GPT();
+  gpt._init();
+
   const adUnitPath = '/Test/123';
   const size = [728, 90];
   const content = 'TEST CONTENT';
@@ -61,6 +63,12 @@ describe('ContentService', () => {
     it('returns undefined', () => {
       const service = new ContentService(gpt);
       expect(service.enable()).to.not.be.ok();
+    });
+
+    it('should be a singleton', () => {
+      const service = new ContentService(gpt);
+      service.enable();
+      expect(service.enable()).to.be(undefined);
     });
 
     it('sets any stored content', () => {
